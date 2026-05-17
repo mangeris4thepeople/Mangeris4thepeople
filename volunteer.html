@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer — Mangeris for the People 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #F5C518;
+    --red: #C0392B;
+    --dark: #0a0a0a;
+    --charcoal: #141414;
+    --white: #ffffff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    background: var(--dark);
+    color: var(--white);
+    min-height: 100vh;
+  }
+
+  /* NAV */
+  nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.2rem 3rem;
+    background: rgba(10,10,10,0.97);
+    border-bottom: 2px solid var(--gold);
+  }
+  .nav-logo {
+    font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700;
+    letter-spacing: 0.12em; color: var(--gold); text-transform: uppercase;
+    text-decoration: none;
+  }
+  .nav-back {
+    font-family: 'Oswald', sans-serif; font-size: 0.8rem; font-weight: 600;
+    letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.5);
+    text-decoration: none; transition: color 0.2s;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .nav-back:hover { color: var(--gold); }
+
+  /* HEADER */
+  .page-header {
+    padding: 5rem 2rem 4rem;
+    text-align: center;
+    background: linear-gradient(180deg, #111 0%, var(--dark) 100%);
+    border-bottom: 1px solid #1e1e1e;
+    animation: fadeDown 0.8s ease both;
+  }
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .page-header .eyebrow {
+    font-family: 'Oswald', sans-serif; font-size: 0.8rem; font-weight: 600;
+    letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .page-header h1 {
+    font-family: 'Oswald', sans-serif; font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 700; text-transform: uppercase; line-height: 0.95;
+    margin-bottom: 1.2rem;
+  }
+  .page-header p {
+    font-size: 1rem; color: rgba(255,255,255,0.55); max-width: 500px;
+    margin: 0 auto; line-height: 1.8;
+  }
+
+  /* FORM SECTION */
+  .form-section {
+    max-width: 780px; margin: 0 auto; padding: 5rem 2rem;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ROLE CARDS */
+  .role-label {
+    font-family: 'Oswald', sans-serif; font-size: 0.75rem; font-weight: 600;
+    letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold);
+    margin-bottom: 1.2rem;
+  }
+  .roles-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.8rem; margin-bottom: 3rem;
+  }
+  .role-card {
+    background: #111; border: 1px solid #2a2a2a; border-top: 3px solid transparent;
+    padding: 1.3rem 1rem; text-align: center; cursor: pointer;
+    transition: all 0.2s; user-select: none;
+  }
+  .role-card:hover { border-color: #444; transform: translateY(-2px); }
+  .role-card.selected {
+    border-color: #333; border-top-color: var(--gold);
+    background: #1a1a1a;
+  }
+  .role-card .role-icon { font-size: 1.6rem; margin-bottom: 0.5rem; display: block; }
+  .role-card .role-name {
+    font-family: 'Oswald', sans-serif; font-size: 0.85rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.05em; color: var(--white);
+  }
+  .role-card.selected .role-name { color: var(--gold); }
+  .role-card input[type="checkbox"] { display: none; }
+
+  /* FORM FIELDS */
+  .form-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+  .form-group.full { grid-column: 1 / -1; }
+  label {
+    font-family: 'Oswald', sans-serif; font-size: 0.75rem; font-weight: 600;
+    letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.5);
+  }
+  input, textarea, select {
+    background: #111; border: 1px solid #2a2a2a; color: var(--white);
+    font-family: 'Libre Baskerville', serif; font-size: 0.95rem;
+    padding: 0.9rem 1.1rem; outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+  }
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--gold);
+    background: #151515;
+  }
+  input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.2); }
+  select { cursor: pointer; appearance: none; }
+  select option { background: #111; }
+  textarea { resize: vertical; min-height: 110px; }
+
+  /* SUBMIT */
+  .submit-row {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1.5rem; margin-top: 2.5rem;
+    padding-top: 2rem; border-top: 1px solid #1e1e1e;
+  }
+  .submit-note {
+    font-size: 0.8rem; color: rgba(255,255,255,0.3); line-height: 1.6;
+    max-width: 320px;
+  }
+  .btn-submit {
+    font-family: 'Oswald', sans-serif; font-size: 0.9rem; font-weight: 700;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    background: var(--gold); color: #000;
+    border: none; padding: 1rem 3rem; cursor: pointer;
+    transition: all 0.2s; flex-shrink: 0;
+  }
+  .btn-submit:hover { background: #e0b200; transform: translateY(-2px); }
+  .btn-submit:active { transform: translateY(0); }
+
+  /* SUCCESS STATE */
+  .success-screen {
+    display: none; text-align: center; padding: 4rem 2rem;
+    animation: fadeUp 0.6s ease both;
+  }
+  .success-screen .check {
+    font-size: 3.5rem; margin-bottom: 1.5rem; display: block;
+  }
+  .success-screen h2 {
+    font-family: 'Oswald', sans-serif; font-size: 2.5rem; font-weight: 700;
+    text-transform: uppercase; margin-bottom: 1rem;
+  }
+  .success-screen h2 span { color: var(--gold); }
+  .success-screen p {
+    font-size: 1rem; color: rgba(255,255,255,0.6); line-height: 1.8;
+    max-width: 440px; margin: 0 auto 2rem;
+  }
+  .success-screen a {
+    font-family: 'Oswald', sans-serif; font-size: 0.85rem; font-weight: 600;
+    letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold);
+    text-decoration: none; border-bottom: 1px solid var(--gold); padding-bottom: 2px;
+  }
+
+  /* DIVIDER */
+  .gold-bar { height: 3px; background: linear-gradient(90deg, var(--red), var(--gold), var(--red)); }
+
+  /* FOOTER */
+  footer {
+    padding: 2rem; text-align: center;
+    background: #000; border-top: 1px solid #1a1a1a;
+  }
+  footer p { font-family: 'Oswald', sans-serif; font-size: 0.75rem;
+    letter-spacing: 0.1em; color: rgba(255,255,255,0.25); text-transform: uppercase; }
+
+  @media (max-width: 600px) {
+    nav { padding: 1rem 1.5rem; }
+    .form-grid { grid-template-columns: 1fr; }
+    .roles-grid { grid-template-columns: repeat(2, 1fr); }
+    .submit-row { flex-direction: column; align-items: stretch; }
+    .btn-submit { text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="mangeris2026.html" class="nav-logo">Mangeris 2026</a>
+  <a href="mangeris2026.html" class="nav-back">← Back to Home</a>
+</nav>
+
+<div class="gold-bar"></div>
+
+<div class="page-header">
+  <div class="eyebrow">Get Involved</div>
+  <h1>Join the<br>Movement</h1>
+  <p>Real change takes real people. Tell us how you'd like to help build a Congress that actually listens.</p>
+</div>
+
+<div class="form-section">
+
+  <!-- SUCCESS SCREEN (hidden by default) -->
+  <div class="success-screen" id="successScreen">
+    <span class="check">⭐</span>
+    <h2>You're In.<br><span>Let's Get to Work.</span></h2>
+    <p>Welcome to the movement. We'll be in touch soon with next steps. Colorado's 4th District is about to hear something new.</p>
+    <a href="mangeris2026.html">← Return to Home</a>
+  </div>
+
+  <!-- SIGN UP FORM -->
+  <form id="volunteerForm" onsubmit="handleSubmit(event)" novalidate>
+
+    <div class="role-label">How would you like to help? (Select all that apply)</div>
+    <div class="roles-grid">
+      <label class="role-card" onclick="toggleRole(this)">
+        <input type="checkbox" name="roles" value="canvass">
+        <span class="role-icon">🚪</span>
+        <span class="role-name">Knock Doors</span>
+      </label>
+      <label class="role-card" onclick="toggleRole(this)">
+        <input type="checkbox" name="roles" value="phone">
+        <span class="role-icon">📞</span>
+        <span class="role-name">Phone Banking</span>
+      </label>
+      <label class="role-card" onclick="toggleRole(this)">
+        <input type="checkbox" name="roles" value="social">
+        <span class="role-icon">📢</span>
+        <span class="role-name">Social Media</span>
+      </label>
+      <label class="role-card" onclick="toggleRole(this)">
+        <input type="checkbox" name="roles" value="events">
+        <span class="role-icon">🎤</span>
+        <span class="role-name">Events & Rallies</span>
+      </label>
+      <label class="role-card" onclick="toggleRole(this)">
+        <input type="checkbox" name="roles" value="data">
+        <span class="role-icon">💻</span>
+        <span class="role-name">Data & Tech</span>
+      </label>
+      <label class="role-card" onclick="toggleRole(this)">
+        <input type="checkbox" name="roles" value="signs">
+        <span class="role-icon">🪧</span>
+        <span class="role-name">Yard Signs</span>
+      </label>
+    </div>
+
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Douglas" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Mangeris" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="(970) 555-0100">
+      </div>
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="Loveland, Fort Collins, Pueblo...">
+      </div>
+      <div class="form-group">
+        <label for="availability">Availability</label>
+        <select id="availability" name="availability">
+          <option value="" disabled selected>When can you help?</option>
+          <option>Weekday mornings</option>
+          <option>Weekday evenings</option>
+          <option>Weekends</option>
+          <option>Flexible / anytime</option>
+        </select>
+      </div>
+      <div class="form-group full">
+        <label for="message">Anything else you'd like us to know?</label>
+        <textarea id="message" name="message" placeholder="Skills, questions, ideas — we want to hear from you."></textarea>
+      </div>
+    </div>
+
+    <div class="submit-row">
+      <p class="submit-note">Your information stays with the campaign only. No spam, no data brokers, no backroom deals.</p>
+      <button type="submit" class="btn-submit">Sign Me Up →</button>
+    </div>
+
+  </form>
+</div>
+
+<div class="gold-bar"></div>
+
+<footer>
+  <p>Paid for by Mangeris4forThePeople &nbsp;·&nbsp; U.S. House · Colorado District 4 &nbsp;·&nbsp; November 3, 2026</p>
+</footer>
+
+<script>
+  function toggleRole(label) {
+    // Allow the default checkbox toggle to happen, then update visual
+    setTimeout(() => {
+      const cb = label.querySelector('input[type="checkbox"]');
+      if (cb.checked) {
+        label.classList.add('selected');
+      } else {
+        label.classList.remove('selected');
+      }
+    }, 0);
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form = document.getElementById('volunteerForm');
+    const firstName = form.firstName.value.trim();
+    const lastName = form.lastName.value.trim();
+    const email = form.email.value.trim();
+
+    if (!firstName || !lastName || !email) {
+      const missing = [];
+      if (!firstName) missing.push('First Name');
+      if (!lastName) missing.push('Last Name');
+      if (!email) missing.push('Email Address');
+      alert('Please fill in: ' + missing.join(', '));
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    // Simulate submission
+    const btn = document.querySelector('.btn-submit');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    setTimeout(() => {
+      form.style.display = 'none';
+      const success = document.getElementById('successScreen');
+      success.style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 900);
+  }
+</script>
+</body>
+</html>
