@@ -230,7 +230,7 @@
   </div>
 
   <!-- SIGN UP FORM -->
-  <form id="volunteerForm" onsubmit="handleSubmit(event)" novalidate>
+  <form id="volunteerForm" action="https://formspree.io/f/mbdbjjyy" method="POST" onsubmit="handleSubmit(event)" novalidate>
 
     <div class="role-label">How would you like to help? (Select all that apply)</div>
     <div class="roles-grid">
@@ -318,8 +318,8 @@
 </footer>
 
 <script>
+  // Add hidden field for roles when form submits
   function toggleRole(label) {
-    // Allow the default checkbox toggle to happen, then update visual
     setTimeout(() => {
       const cb = label.querySelector('input[type="checkbox"]');
       if (cb.checked) {
@@ -330,14 +330,14 @@
     }, 0);
   }
 
-  async function handleSubmit(e) {
-    e.preventDefault();
+  function handleSubmit(e) {
     const form = document.getElementById('volunteerForm');
     const firstName = form.firstName.value.trim();
     const lastName = form.lastName.value.trim();
     const email = form.email.value.trim();
 
     if (!firstName || !lastName || !email) {
+      e.preventDefault();
       const missing = [];
       if (!firstName) missing.push('First Name');
       if (!lastName) missing.push('Last Name');
@@ -347,46 +347,37 @@
     }
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      e.preventDefault();
       alert('Please enter a valid email address.');
       return;
     }
 
+    // Collect roles into hidden field
+    const roles = [...form.querySelectorAll('input[name="roles"]:checked')]
+      .map(cb => cb.value).join(', ') || 'Not specified';
+    let rolesField = form.querySelector('input[name="selected_roles"]');
+    if (!rolesField) {
+      rolesField = document.createElement('input');
+      rolesField.type = 'hidden';
+      rolesField.name = 'selected_roles';
+      form.appendChild(rolesField);
+    }
+    rolesField.value = roles;
+
+    // Add redirect field for Formspree
+    let redirectField = form.querySelector('input[name="_next"]');
+    if (!redirectField) {
+      redirectField = document.createElement('input');
+      redirectField.type = 'hidden';
+      redirectField.name = '_next';
+      form.appendChild(redirectField);
+    }
+    redirectField.value = 'https://mangeris4thepeople2026.vote/thankyou.html';
+
     const btn = document.querySelector('.btn-submit');
     btn.textContent = 'Sending...';
     btn.disabled = true;
-
-    const roles = [...form.querySelectorAll('input[name="roles"]:checked')]
-      .map(cb => cb.value).join(', ') || 'Not specified';
-
-    const payload = {
-      firstName, lastName, email,
-      phone: form.phone.value.trim(),
-      city: form.city.value.trim(),
-      availability: form.availability.value,
-      roles,
-      message: form.message.value.trim()
-    };
-
-    try {
-      const res = await fetch('https://formspree.io/f/mbdbjjyy', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      if (res.ok) {
-        form.style.display = 'none';
-        document.getElementById('successScreen').style.display = 'block';
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        btn.textContent = 'Sign Me Up →';
-        btn.disabled = false;
-        alert('Something went wrong. Please try again.');
-      }
-    } catch (err) {
-      btn.textContent = 'Sign Me Up →';
-      btn.disabled = false;
-      alert('Connection error. Please check your internet and try again.');
-    }
+    // Let the form submit naturally to Formspree
   }
 </script>
 </body>
