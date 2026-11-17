@@ -18,6 +18,8 @@
 <meta name="twitter:image" content="https://mangeris4thepeople.com/img/og-2028.jpg">
 <meta name="theme-color" content="#06132c">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2306132c'/%3E%3Ctext x='32' y='47' font-family='Arial Black,Arial' font-weight='900' font-size='42' fill='%23f7b500' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
@@ -113,6 +115,7 @@ label.f input { display: block; width: 100%; margin-top: 5px; font: inherit; fon
 label.f input:focus { border-color: var(--navy); outline: none; }
 .status { font-size: 14px; font-weight: 600; margin-top: 12px; padding: 10px 12px; border-radius: 4px; background: var(--paper); color: var(--navy); border-left: 4px solid var(--gold); }
 .status[hidden] { display: none; }
+.fine { font-size: 12px; color: var(--muted); margin-top: 10px; line-height: 1.4; }
 
 /* The math */
 .math-grid { display: grid; grid-template-columns: 1fr; gap: 36px; margin-top: 34px; }
@@ -312,7 +315,9 @@ footer { background: #040d1f; color: var(--on-navy-muted); padding: 44px 0 40px;
           <label class="f full" for="j-email">Email<input id="j-email" name="email" type="email" autocomplete="email" required></label>
           <label class="f full" for="j-phone">Mobile (optional)<input id="j-phone" name="phone" type="tel" autocomplete="tel"></label>
         </div>
+        <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <button class="btn red block" type="submit" style="margin-top:14px">I'm in</button>
+        <p class="fine">You will get campaign updates by email, and by text if you add a mobile number.</p>
         <p class="status" role="status" hidden></p>
       </form>
     </div>
@@ -509,7 +514,9 @@ footer { background: #040d1f; color: var(--on-navy-muted); padding: 44px 0 40px;
           <label><input type="checkbox" id="v-host" name="help" value="host"><span>Host a meet and greet</span></label>
           <label><input type="checkbox" id="v-gop" name="help" value="crossover"><span>I'm a Republican crossing over</span></label>
         </div>
+        <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <button class="btn navybtn block" type="submit" style="margin-top:18px">Count me in</button>
+        <p class="fine">You will get campaign updates by email, and by text or call if you add a phone number.</p>
         <p class="status" role="status" hidden></p>
       </form>
     </div>
@@ -558,9 +565,8 @@ footer { background: #040d1f; color: var(--on-navy-muted); padding: 44px 0 40px;
 
 <script>
 (function () {
-  /* Set this to the signup endpoint when the site is deployed. Empty means preview mode. */
-  var SIGNUP_ENDPOINT = '';
-  /* Until an endpoint exists, forms hand off to the visitor's email app. */
+  var SIGNUP_ENDPOINT = '/api/signup';
+  /* If the endpoint cannot be reached, forms hand off to the visitor's email app. */
   var SIGNUP_EMAIL = 'Mangeris4thepeople2026@gmail.com';
 
   /* Mobile menu */
@@ -590,20 +596,29 @@ footer { background: #040d1f; color: var(--on-navy-muted); padding: 44px 0 40px;
       if (missing) { say(form, 'Fill in ' + missing.parentNode.firstChild.textContent.trim().toLowerCase() + ' and try again.'); missing.focus(); return; }
       var email = form.querySelector('input[type="email"]');
       if (email && email.value.indexOf('@') < 1) { say(form, 'That email does not look right. Check it and try again.'); email.focus(); return; }
-      if (!SIGNUP_ENDPOINT) {
+      function byEmail() {
         var lines = [];
-        new FormData(form).forEach(function (v, k) { if (v) { lines.push(k + ': ' + v); } });
+        new FormData(form).forEach(function (v, k) { if (v && k !== 'company') { lines.push(k + ': ' + v); } });
         var subject = form.getAttribute('data-form') === 'volunteer' ? 'Volunteer signup' : 'Count me in for 2028';
         window.location.href = 'mailto:' + SIGNUP_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
         say(form, 'Your email app is opening with your details filled in. Press send and you are in.');
-        return;
       }
+      if (!SIGNUP_ENDPOINT) { byEmail(); return; }
       var data = {};
-      new FormData(form).forEach(function (v, k) { data[k] = data[k] ? data[k] + ',' + v : v; });
+      new FormData(form).forEach(function (v, k) { data[k] = data[k] ? data[k] + ', ' + v : v; });
       data.form = form.getAttribute('data-form');
+      data.source = document.referrer || '';
+      var btn = form.querySelector('button[type="submit"]');
+      btn.disabled = true;
       fetch(SIGNUP_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
-        .then(function (r) { if (!r.ok) { throw new Error('bad'); } say(form, 'You are in. Watch your inbox.'); form.reset(); })
-        .catch(function () { say(form, 'That did not go through. Check your connection and try again.'); });
+        .then(function (r) {
+          if (!r.ok) { throw new Error('bad'); }
+          say(form, form.getAttribute('data-form') === 'volunteer' ? 'You are on the list. We will be in touch about next steps.' : 'You are in. We will be in touch.');
+          form.reset();
+          if (window.va) { window.va('event', { name: 'signup', data: { form: data.form } }); }
+        })
+        .catch(byEmail)
+        .then(function () { btn.disabled = false; });
     });
   });
 
