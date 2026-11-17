@@ -1,400 +1,661 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Douglas Mangeris 2028 | Libertarian for Colorado District 4</title>
-<meta name="description" content="Douglas Mangeris, Libertarian for Colorado's 4th Congressional District. The 2026 race is done. The 2028 race started the morning after. Every day for two years.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mangeris4ThePeople</title>
+<meta name="description" content="Doug Mangeris, Libertarian for Congress in Colorado's 4th. Republicans, independents and Libertarians banding together to take the seat back in 2028.">
+<link rel="canonical" href="https://mangeris4thepeople.com/">
+<meta property="og:title" content="Band together. Take back the 4th.">
+<meta property="og:description" content="51% of us voted against the Democrat. The Democrat won anyway. In 2028, we stand in one column. Doug Mangeris, Libertarian for Congress.">
+<meta property="og:url" content="https://mangeris4thepeople.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Douglas Mangeris 2028 | I'm Coming Back">
-<meta property="og:description" content="Libertarian for Colorado District 4. Every day for two years. Real Freedom. Real Opportunity. Real Accountability.">
-<meta property="og:image" content="/img/og.jpg">
+<meta property="og:image" content="https://mangeris4thepeople.com/img/og-2028.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@MericanDreamz">
-<meta name="theme-color" content="#0a0a0a">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230a0a0a'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-weight='900' font-size='30' fill='%23F5C518' text-anchor='middle'%3EM28%3C/text%3E%3C/svg%3E">
+<meta name="twitter:image" content="https://mangeris4thepeople.com/img/og-2028.jpg">
+<meta name="theme-color" content="#06132c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2306132c'/%3E%3Ctext x='32' y='47' font-family='Arial Black,Arial' font-weight='900' font-size='42' fill='%23f7b500' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
 <style>
-:root{
-  --gold:#F5C518; --gold-d:#c99e00; --red:#C0392B; --ink:#0a0a0a; --char:#121212;
-  --line:rgba(255,255,255,.09); --muted:rgba(255,255,255,.62); --soft:rgba(255,255,255,.8);
+/* Layout idea: a national-budget campaign homepage. One loud thing (rally-sign headlines over the candidate's face), everything else quiet. Navy field, Libertarian gold for the message, red reserved for the Donate action. */
+:root {
+  color-scheme: light;
+  --navy: #0b1f44;
+  --deep: #06132c;
+  --gold: #f7b500;
+  --red: #e02b33;
+  --paper: #f3f5f9;
+  --white: #ffffff;
+  --ink: #0d1626;
+  --muted: #56627a;
+  --line: #d6dce6;
+  --on-navy: #eef2f8;
+  --on-navy-muted: #a9b6cc;
+  --blue-team: #5d7fb3;
+  --display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body: "Archivo", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Libre Baskerville',Georgia,serif;background:var(--ink);color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-.o{font-family:'Oswald',sans-serif;text-transform:uppercase}
-.mono{font-family:'JetBrains Mono',monospace}
-.wrap{max-width:1180px;margin:0 auto;padding:0 2rem}
-.label{font-family:'Oswald',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem;display:flex;align-items:center;gap:.8rem}
-.label:before{content:"";width:28px;height:2px;background:var(--gold)}
-.h2{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(2.3rem,5.4vw,4rem);line-height:.98;letter-spacing:-.005em}
-.h2 span{color:var(--gold)}
-.rule{height:4px;background:linear-gradient(90deg,var(--red),var(--gold) 50%,var(--red))}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { margin: 0; background: var(--white); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+p { margin: 0; }
+a:focus-visible, button:focus-visible, input:focus-visible, label:focus-within { outline: 3px solid var(--gold); outline-offset: 2px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+h1, h2, h3, .disp { font-family: var(--display); font-stretch: 62%; font-weight: 900; text-transform: uppercase; line-height: 0.9; margin: 0; text-wrap: balance; letter-spacing: 0.002em; }
+h2 { font-size: clamp(44px, 10.5vw, 84px); }
+h3 { font-size: 30px; line-height: 0.98; font-stretch: 68%; }
+.eyebrow { font-size: 13px; font-weight: 800; font-stretch: 100%; letter-spacing: 0.16em; text-transform: uppercase; display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+.eyebrow::before { content: ""; width: 34px; height: 4px; background: var(--gold); flex: none; }
+.lede { font-size: 19px; max-width: 60ch; margin-top: 18px; }
+.sec { padding: 68px 0; }
+.navy { background: var(--navy); color: var(--on-navy); }
+.deep { background: var(--deep); color: var(--on-navy); }
+.paper { background: var(--paper); }
+.goldtxt { color: var(--gold); }
+sup a { font-size: 11px; font-weight: 700; text-decoration: none; color: var(--red); padding: 0 1px; }
+.navy sup a, .deep sup a { color: var(--gold); }
 
-/* NAV */
-nav{position:fixed;inset:0 0 auto 0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:.95rem 2.4rem;background:rgba(10,10,10,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(245,197,24,.35)}
-.brand{font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:1.05rem;text-decoration:none}
-.brand b{color:var(--gold)}
-.nav-links{display:flex;gap:1.9rem;list-style:none;align-items:center}
-.nav-links a{font-family:'Oswald',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:rgba(255,255,255,.85);transition:color .2s}
-.nav-links a:hover{color:var(--gold)}
-.nav-links .pill-btn{background:var(--gold);color:#000;padding:.5rem 1.1rem}
-.nav-links .pill-btn:hover{color:#000;background:#ffd84a}
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-family: var(--display); font-stretch: 78%; font-weight: 900; font-size: 17px; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; padding: 16px 24px; border: 2px solid transparent; border-radius: 4px; cursor: pointer; line-height: 1; transition: transform 0.12s ease, background 0.12s ease; }
+.btn:hover { transform: translateY(-2px); }
+.btn.red { background: var(--red); color: #fff; }
+.btn.red:hover { background: #f03a42; }
+.btn.gold { background: var(--gold); color: var(--deep); }
+.btn.gold:hover { background: #ffc61f; }
+.btn.navybtn { background: var(--navy); color: #fff; }
+.btn.line { border-color: rgba(238, 242, 248, 0.6); color: var(--on-navy); background: transparent; }
+.btn.line:hover { border-color: #fff; }
+.btn.block { width: 100%; }
 
-/* HERO */
-.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:7rem 0 4rem}
-.hero-bg{position:absolute;inset:0;background:url('/img/hero.webp') center 35%/cover no-repeat;filter:brightness(.42) saturate(1.1);transform:scale(1.06);animation:zoom 26s ease-in-out infinite alternate}
-@keyframes zoom{to{transform:scale(1.14)}}
-.hero-shade{position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,rgba(192,57,43,.22),transparent 55%),linear-gradient(180deg,rgba(10,10,10,.2) 0%,rgba(10,10,10,.55) 55%,var(--ink) 100%)}
-.ghost{position:absolute;right:-2vw;bottom:-6vw;font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(14rem,38vw,34rem);line-height:.8;color:transparent;-webkit-text-stroke:2px rgba(245,197,24,.22);letter-spacing:-.04em;pointer-events:none;user-select:none}
-.hero .wrap{position:relative;z-index:2;width:100%}
-.eyebrow{font-family:'Oswald',sans-serif;font-size:.86rem;font-weight:600;letter-spacing:.38em;text-transform:uppercase;color:var(--gold);margin-bottom:1.4rem;animation:up 1s .05s both}
-.name{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(3.6rem,11vw,8.6rem);line-height:.86;letter-spacing:-.015em;animation:up 1s .15s both}
-.name span{color:var(--gold);display:block}
-.comeback{margin-top:1.6rem;display:inline-flex;align-items:center;gap:.9rem;animation:up 1s .3s both}
-.comeback .tag{background:var(--red);font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:.95rem;padding:.55rem 1.2rem}
-.comeback i{font-size:1.15rem;color:var(--soft)}
-.tagline{margin-top:1.8rem;font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(1.15rem,2.6vw,1.6rem);letter-spacing:.05em;line-height:1.45;animation:up 1s .42s both}
-.tagline strong{color:var(--gold)}
-.cta{margin-top:2.3rem;display:flex;gap:1rem;flex-wrap:wrap;animation:up 1s .55s both}
-.btn{font-family:'Oswald',sans-serif;font-weight:600;font-size:.92rem;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;padding:.95rem 2rem;border:2px solid transparent;transition:transform .2s,background .2s,color .2s;display:inline-block;text-align:center;min-width:210px}
-.btn-gold{background:var(--gold);color:#000;border-color:var(--gold)}
-.btn-gold:hover{background:#ffd84a;transform:translateY(-2px)}
-.btn-line{border-color:#fff;color:#fff}
-.btn-line:hover{background:#fff;color:#000;transform:translateY(-2px)}
-@keyframes up{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+/* Announcement bar */
+.announce { background: var(--gold); color: var(--deep); font-weight: 700; font-size: 14px; text-align: center; }
+.announce a { display: block; padding: 10px 20px; text-decoration: none; }
+.announce b { font-weight: 900; }
 
-/* COUNTER */
-.counter{position:relative;z-index:3;margin-top:-1px;background:#0d0d0d;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.counter-grid{display:grid;grid-template-columns:repeat(4,1fr)}
-.cell{padding:2rem 1.6rem;border-right:1px solid var(--line)}
-.cell:last-child{border-right:0}
-.cell .k{font-family:'Oswald',sans-serif;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
-.cell .v{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:clamp(1.9rem,3.6vw,2.8rem);color:var(--gold);margin-top:.45rem;line-height:1}
-.cell .s{font-size:.82rem;color:var(--muted);margin-top:.5rem;font-style:italic}
-.bar{height:3px;background:#222;margin-top:.9rem;position:relative;overflow:hidden}
-.bar i{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,var(--red),var(--gold));width:0;transition:width 1.6s ease}
+/* Header */
+.hdr { position: sticky; top: 0; z-index: 30; background: var(--deep); color: #fff; border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+.hdr .wrap { display: flex; align-items: center; gap: 10px; min-height: 60px; }
+.logo { display: flex; align-items: center; gap: 8px; text-decoration: none; font-family: var(--display); font-stretch: 62%; font-weight: 900; font-size: 25px; line-height: 1; text-transform: uppercase; white-space: nowrap; }
+.logo span { background: var(--gold); color: var(--deep); font-size: 11px; font-stretch: 80%; letter-spacing: 0.05em; padding: 4px 5px 3px; border-radius: 3px; white-space: nowrap; }
+.nav { display: none; gap: 22px; margin-left: auto; }
+.nav a { text-decoration: none; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--on-navy); padding: 8px 0; }
+.nav a:hover { color: var(--gold); }
+.hdr .btn { padding: 11px 13px; font-size: 14px; margin-left: auto; }
+.menu { background: none; border: 0; color: #fff; padding: 10px 4px; cursor: pointer; display: grid; gap: 5px; }
+.menu i { display: block; width: 26px; height: 3px; background: #fff; border-radius: 2px; }
+.nav.open { display: grid; position: absolute; left: 0; right: 0; top: 100%; background: var(--deep); padding: 8px 20px 20px; gap: 0; border-bottom: 3px solid var(--gold); }
+.nav.open a { padding: 14px 0; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 16px; }
 
-/* STATEMENT */
-.statement{padding:7rem 0;text-align:center;background:#0a0a0a}
-.statement p.big{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(1.8rem,4.6vw,3.3rem);line-height:1.12;max-width:980px;margin:0 auto}
-.statement p.big span{color:var(--gold)}
-.statement .sig{margin-top:1.6rem;font-family:'Oswald',sans-serif;letter-spacing:.28em;text-transform:uppercase;font-size:.85rem;color:rgba(255,255,255,.45)}
+/* Hero */
+.hero { background: var(--deep); color: #fff; position: relative; overflow: hidden; }
+.hero-photo { position: relative; height: min(96vw, 520px); }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 16%; filter: saturate(0.92) contrast(1.04); }
+.hero-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(6, 19, 44, 0) 38%, rgba(6, 19, 44, 0.82) 78%, var(--deep) 100%); }
+.hero-body { position: relative; margin-top: -128px; padding-bottom: 44px; }
+.hero .eyebrow { color: var(--gold); font-size: 12px; flex-wrap: wrap; }
+h1 { font-size: clamp(74px, 21.5vw, 168px); line-height: 0.84; }
+h1 span { display: block; }
+.hero p.pitch { font-size: 19px; margin-top: 20px; max-width: 46ch; color: var(--on-navy); }
+.hero p.pitch b { color: #fff; }
+.card { background: #fff; color: var(--ink); border-radius: 8px; padding: 22px; margin-top: 28px; border-top: 6px solid var(--gold); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35); }
+.card h3 { color: var(--navy); }
+.card p.sub { color: var(--muted); font-size: 15px; margin-top: 6px; }
+.fields { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px; }
+.fields .full { grid-column: 1 / -1; }
+label.f { display: block; font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+label.f input { display: block; width: 100%; margin-top: 5px; font: inherit; font-size: 16px; font-weight: 500; letter-spacing: 0; text-transform: none; color: var(--ink); padding: 13px 12px; border: 2px solid var(--line); border-radius: 4px; background: #fff; }
+label.f input:focus { border-color: var(--navy); outline: none; }
+.status { font-size: 14px; font-weight: 600; margin-top: 12px; padding: 10px 12px; border-radius: 4px; background: var(--paper); color: var(--navy); border-left: 4px solid var(--gold); }
+.status[hidden] { display: none; }
 
-/* ABOUT */
-.sec{padding:7rem 0}
-.about{display:grid;grid-template-columns:5fr 6fr;gap:4.5rem;align-items:center}
-.photo{position:relative}
-.photo img{width:100%;height:auto;display:block;aspect-ratio:4/5;object-fit:cover;object-position:top;filter:contrast(1.04)}
-.photo:before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--gold);z-index:-1}
-.photo .stamp{position:absolute;left:-14px;bottom:28px;background:var(--red);font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.85rem;padding:.6rem 1rem}
-.about p{font-size:1.04rem;line-height:1.9;color:var(--soft);margin-bottom:1.15rem}
-.about p strong{color:var(--gold);font-weight:700}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:2rem;border:1px solid var(--line)}
-.stat{background:#0d0d0d;padding:1.3rem 1rem}
-.stat b{display:block;font-family:'Oswald',sans-serif;font-size:1.75rem;color:var(--gold);line-height:1}
-.stat small{display:block;margin-top:.45rem;font-family:'Oswald',sans-serif;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);line-height:1.4}
+/* The math */
+.math-grid { display: grid; grid-template-columns: 1fr; gap: 36px; margin-top: 34px; }
+.bars { display: grid; gap: 16px; }
+.bar { display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; align-items: baseline; }
+.bar .who { font-weight: 700; }
+.bar .n { font-family: var(--display); font-stretch: 70%; font-weight: 900; font-size: 30px; line-height: 1; font-variant-numeric: tabular-nums; }
+.track { grid-column: 1 / -1; height: 18px; background: var(--paper); border-radius: 3px; overflow: hidden; display: flex; }
+.fill { height: 100%; animation: grow 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) both; transform-origin: left; }
+@keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.fill.d { background: var(--blue-team); }
+.fill.r { background: var(--red); }
+.fill.l { background: var(--gold); }
+.bar.sum { border-top: 2px solid var(--ink); padding-top: 18px; margin-top: 6px; }
+.bar.sum .n { font-size: 54px; color: var(--navy); }
+.bar.sum .track { height: 26px; }
+.note { font-size: 13px; color: var(--muted); }
+.straight { background: var(--navy); color: var(--on-navy); border-radius: 8px; padding: 26px 22px; }
+.straight h3 { color: var(--gold); margin-bottom: 12px; }
 
-/* LEVELS */
-.levels-bg{background:#0d0d0d}
-.levels{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:3rem;border:1px solid var(--line)}
-.lv{background:#101010;padding:2.4rem 1.8rem;position:relative;transition:background .25s}
-.lv:hover{background:#151515}
-.lv:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--c)}
-.lv .k{font-family:'Oswald',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--c)}
-.lv .t{font-family:'Oswald',sans-serif;font-size:1.55rem;font-weight:700;text-transform:uppercase;margin:.6rem 0 .8rem}
-.lv p{font-size:.9rem;line-height:1.75;color:var(--muted)}
+/* Meet */
+.meet-grid { display: grid; grid-template-columns: 1fr; gap: 36px; margin-top: 30px; }
+.tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.tile { border: 1px solid rgba(255, 255, 255, 0.16); border-radius: 8px; padding: 18px 16px; background: rgba(255, 255, 255, 0.04); }
+.tile .big { font-family: var(--display); font-stretch: 62%; font-weight: 900; font-size: clamp(46px, 12vw, 68px); line-height: 0.9; color: var(--gold); }
+.tile p { font-size: 14px; color: var(--on-navy-muted); margin-top: 8px; line-height: 1.35; }
+.bio p + p { margin-top: 14px; }
+.facts { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 8px; font-size: 15px; color: var(--on-navy-muted); }
+.facts li { padding-left: 18px; position: relative; }
+.facts li::before { content: ""; position: absolute; left: 0; top: 0.6em; width: 8px; height: 8px; background: var(--gold); }
+.quote { margin-top: 44px; border-left: 8px solid var(--gold); padding: 4px 0 4px 22px; }
+.quote .q { font-family: var(--display); font-stretch: 62%; font-weight: 900; text-transform: uppercase; font-size: clamp(44px, 10vw, 80px); line-height: 0.9; color: #fff; }
+.quote p { margin-top: 14px; max-width: 58ch; color: var(--on-navy); }
 
-/* ACCOUNTABILITY */
-.acct{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:3rem}
-.acct p{font-size:1.04rem;line-height:1.9;color:var(--soft);margin-bottom:1.15rem}
-.acct p strong{color:var(--gold)}
-.steps{background:#111;border:1px solid var(--line);border-top:3px solid var(--gold)}
-.step{display:flex;gap:1.2rem;padding:1.5rem 1.8rem;border-bottom:1px solid var(--line)}
-.step:last-child{border-bottom:0}
-.step b{font-family:'JetBrains Mono',monospace;font-size:1.35rem;color:var(--gold);min-width:2.4rem}
-.step p{font-size:.93rem;line-height:1.65;color:var(--soft);margin:0}
-.fine{margin-top:1.3rem;font-family:'Oswald',sans-serif;letter-spacing:.05em;font-size:.88rem;color:rgba(255,255,255,.45)}
+/* Donate */
+.donate { background: var(--gold); color: var(--deep); padding: 60px 0; }
+.donate .eyebrow::before { background: var(--deep); }
+.amts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 26px; max-width: 760px; }
+.amts a { font-size: 26px; padding: 20px 8px; }
+.amts a.other { font-size: 17px; background: transparent; border-color: var(--deep); color: var(--deep); }
+.donate .small { font-size: 13px; margin-top: 14px; font-weight: 600; max-width: 70ch; }
 
-/* PLATFORM */
-.plat-bg{background:var(--char)}
-.plat{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:3rem;border:1px solid var(--line)}
-.card{background:#151515;padding:2.3rem 2rem;position:relative;transition:background .25s,transform .25s}
-.card:hover{background:#1b1b1b}
-.card .n{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--gold);letter-spacing:.12em}
-.card h3{font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em;margin:.7rem 0 .8rem}
-.card p{font-size:.9rem;line-height:1.75;color:var(--muted)}
+/* Plan */
+.plan { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 34px; }
+.plank { background: #fff; border-radius: 8px; padding: 24px 22px 26px; border: 1px solid var(--line); position: relative; overflow: hidden; }
+.plank .no { font-family: var(--display); font-stretch: 62%; font-weight: 900; font-size: 64px; line-height: 0.8; color: var(--paper); position: absolute; right: 14px; top: 14px; -webkit-text-stroke: 1px var(--line); }
+.plank h3 { color: var(--navy); max-width: 11ch; position: relative; }
+.plank p { margin-top: 12px; position: relative; }
+.plank a { text-decoration-color: var(--gold); text-decoration-thickness: 3px; text-underline-offset: 3px; font-weight: 700; }
 
-/* ROAD */
-.road{position:relative;margin-top:3.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
-.road:before{content:"";position:absolute;left:0;right:0;top:11px;height:2px;background:linear-gradient(90deg,var(--gold),var(--red))}
-.mile{position:relative;padding-top:2.4rem}
-.mile:before{content:"";position:absolute;top:2px;left:0;width:20px;height:20px;border-radius:50%;background:var(--ink);border:3px solid var(--gold)}
-.mile.now:before{background:var(--gold);box-shadow:0 0 0 6px rgba(245,197,24,.18)}
-.mile .when{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--gold);letter-spacing:.08em}
-.mile h3{font-family:'Oswald',sans-serif;font-size:1.35rem;text-transform:uppercase;margin:.5rem 0 .6rem}
-.mile p{font-size:.9rem;line-height:1.7;color:var(--muted)}
+/* Record */
+.rows { margin-top: 34px; border-top: 3px solid var(--ink); }
+.rec { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.tagp { font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
+.tagp.del { color: var(--red); }
+.promised { font-family: var(--display); font-stretch: 62%; font-weight: 900; text-transform: uppercase; font-size: clamp(34px, 8vw, 50px); line-height: 0.92; color: #8a94a6; text-decoration: line-through; text-decoration-color: var(--red); text-decoration-thickness: 5px; }
+.delivered { max-width: 60ch; }
+.delivered b { font-weight: 800; }
+.blue { margin-top: 30px; background: var(--paper); border-left: 8px solid var(--gold); border-radius: 0 8px 8px 0; padding: 22px; max-width: 76ch; }
 
-/* BANNER */
-.banner{position:relative;min-height:520px;display:flex;align-items:center;justify-content:center;overflow:hidden;text-align:center}
-.banner-bg{position:absolute;inset:0;background:url('/img/flag.webp') center/cover;filter:brightness(.32)}
-.banner-sh{position:absolute;inset:0;background:linear-gradient(135deg,rgba(192,57,43,.45),rgba(0,0,0,.55))}
-.banner .in{position:relative;z-index:2;padding:4rem 2rem;max-width:900px}
-.banner h2{font-family:'Oswald',sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(2.4rem,7vw,5.2rem);line-height:.95}
-.banner h2 em{display:block;font-style:normal;color:var(--gold)}
-.banner p{margin:1.3rem auto 2rem;color:var(--soft);font-size:1.08rem;line-height:1.75;max-width:560px}
+/* Debt */
+.debt { padding: 54px 0; }
+.debt-grid { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: end; }
+.lab { font-size: 12px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--on-navy-muted); }
+.debt .big { font-family: var(--display); font-stretch: 62%; font-weight: 900; font-size: clamp(30px, 9.6vw, 118px); line-height: 0.9; color: var(--gold); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.debt .since { font-family: var(--display); font-stretch: 62%; font-weight: 900; font-size: clamp(38px, 8vw, 64px); line-height: 0.9; font-variant-numeric: tabular-nums; }
+.debt .note { color: var(--on-navy-muted); max-width: 64ch; margin-top: 14px; }
 
-/* INVOLVE */
-.inv{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:3rem;border:1px solid var(--line)}
-.ic{background:#0f0f0f;padding:2.6rem 1.8rem;display:flex;flex-direction:column}
-.ic h3{font-family:'Oswald',sans-serif;font-size:1.4rem;font-weight:700;text-transform:uppercase;margin-bottom:.8rem}
-.ic h3 span{color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:.85rem;display:block;margin-bottom:.6rem;letter-spacing:.1em}
-.ic p{font-size:.9rem;line-height:1.75;color:var(--muted);flex:1}
-.ic a{margin-top:1.6rem;align-self:flex-start;font-family:'Oswald',sans-serif;font-size:.86rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--gold);border-bottom:1px solid var(--gold);padding-bottom:3px}
-.ic a:hover{opacity:.75}
+/* Test */
+.test-grid { display: grid; grid-template-columns: 1fr; gap: 26px; margin-top: 30px; align-items: start; }
+.q { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 18px 0; border-top: 1px solid rgba(255, 255, 255, 0.16); }
+.q p { font-size: 19px; font-weight: 600; line-height: 1.35; }
+.q .no { color: var(--gold); font-weight: 900; margin-right: 8px; }
+.pick { display: flex; gap: 8px; }
+.pick button { flex: 1; font-family: var(--display); font-stretch: 78%; font-weight: 900; font-size: 15px; letter-spacing: 0.06em; text-transform: uppercase; padding: 13px 14px; background: transparent; color: #fff; border: 2px solid rgba(255, 255, 255, 0.45); border-radius: 4px; cursor: pointer; }
+.pick button[aria-pressed="true"].yes { background: var(--gold); border-color: var(--gold); color: var(--deep); }
+.pick button[aria-pressed="true"].no-btn { background: #fff; border-color: #fff; color: var(--deep); }
+.score { background: var(--deep); border-radius: 8px; padding: 24px 22px; border-top: 6px solid var(--gold); position: sticky; top: 84px; }
+.score .num { font-family: var(--display); font-stretch: 62%; font-weight: 900; font-size: 120px; line-height: 0.82; color: var(--gold); font-variant-numeric: tabular-nums; }
+.score .num small { font-size: 54px; color: #fff; }
+.score p { margin-top: 14px; }
+.score .btn { margin-top: 18px; }
 
-/* FOOTER */
-footer{background:#000;border-top:1px solid #1d1d1d;padding:3.5rem 0 3rem;text-align:center}
-.f-name{font-family:'Oswald',sans-serif;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-size:1.45rem}
-.f-links{margin:1.1rem 0 1.4rem;display:flex;gap:1.6rem;justify-content:center;flex-wrap:wrap}
-.f-links a{font-family:'Oswald',sans-serif;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:rgba(255,255,255,.55)}
-.f-links a:hover{color:var(--gold)}
-.disc{display:inline-block;border:1px solid #2a2a2a;padding:.7rem 1.2rem;font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.7}
+/* Why Libertarian */
+.steps { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 34px; }
+.step { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 22px; }
+.step .dist { font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.step h3 { margin-top: 8px; color: var(--navy); }
+.step h3 em { font-style: normal; color: #8a94a6; }
+.step p { margin-top: 10px; }
+.step.fed { background: var(--navy); border-color: var(--navy); color: var(--on-navy); }
+.step.fed .dist { color: var(--gold); }
+.step.fed h3 { color: #fff; }
+.step.fed h3 em { color: var(--gold); }
 
-.reveal{opacity:.15;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
-.reveal.in{opacity:1;transform:none}
+/* Volunteer */
+.vol-grid { display: grid; grid-template-columns: 1fr; gap: 30px; margin-top: 8px; align-items: start; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.chips label { cursor: pointer; }
+.chips input { position: absolute; opacity: 0; }
+.chips span { display: inline-block; font-weight: 700; font-size: 14px; padding: 10px 14px; border: 2px solid var(--line); border-radius: 999px; }
+.chips input:checked + span { background: var(--navy); border-color: var(--navy); color: #fff; }
+.volcard { background: var(--paper); border-radius: 8px; padding: 22px; border-top: 6px solid var(--navy); }
 
-@media (max-width:980px){
-  .nav-links li:not(.keep){display:none}
-  nav{padding:.85rem 1.2rem}
-  .wrap{padding:0 1.3rem}
-  .counter-grid{grid-template-columns:1fr 1fr}
-  .cell:nth-child(2){border-right:0}
-  .cell:nth-child(-n+2){border-bottom:1px solid var(--line)}
-  .about,.acct{grid-template-columns:1fr;gap:3rem}
-  .photo{max-width:440px}
-  .levels,.inv{grid-template-columns:1fr 1fr}
-  .plat{grid-template-columns:1fr 1fr}
-  .road{grid-template-columns:1fr 1fr;row-gap:2.8rem}
-  .road:before{display:none}
-  .sec{padding:5rem 0}
+/* Join */
+.join { padding: 76px 0; background: var(--deep); color: #fff; position: relative; overflow: hidden; }
+.join h2 { font-size: clamp(54px, 13vw, 118px); }
+.actions { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 30px; max-width: 860px; }
+.slogan { margin-top: 34px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; font-size: 13px; color: var(--on-navy-muted); }
+
+/* Footer */
+footer { background: #040d1f; color: var(--on-navy-muted); padding: 44px 0 40px; font-size: 14px; }
+.foot { display: grid; grid-template-columns: 1fr; gap: 28px; }
+.foot nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.foot nav a { color: var(--on-navy); text-decoration: none; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; font-size: 13px; }
+.receipts h3 { color: #fff; font-size: 24px; }
+.receipts ol { margin: 12px 0 0; padding-left: 20px; font-size: 13px; }
+.receipts li { margin-bottom: 6px; overflow-wrap: anywhere; }
+.paid { display: inline-block; border: 1px solid rgba(255, 255, 255, 0.6); color: #fff; padding: 10px 14px; font-weight: 700; letter-spacing: 0.04em; justify-self: start; }
+
+@media (min-width: 720px) {
+  .fields.three { grid-template-columns: 1fr 1fr 1fr 1fr; }
+  .fields.three .full { grid-column: auto; }
+  .tiles { grid-template-columns: repeat(4, 1fr); }
+  .amts { grid-template-columns: repeat(6, 1fr); }
+  .plan { grid-template-columns: repeat(2, 1fr); }
+  .rec { grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: start; }
+  .q { grid-template-columns: 1fr 260px; align-items: center; }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .actions { grid-template-columns: repeat(3, 1fr); }
+  .debt-grid { grid-template-columns: 1.6fr 1fr; }
 }
-@media (max-width:600px){
-  .eyebrow{letter-spacing:.2em;font-size:.78rem}
-  .levels,.inv,.plat,.road{grid-template-columns:1fr}
-  .stats{grid-template-columns:1fr 1fr}
-  .btn{width:100%}
-  .cta{flex-direction:column}
-  .ghost{font-size:15rem;bottom:-2rem;right:-3rem}
-  .statement{padding:5rem 0}
-  .cell{padding:1.5rem 1.1rem}
+@media (min-width: 1000px) {
+  .nav { display: flex; }
+  .menu { display: none; }
+  .hdr .btn { margin-left: 0; padding: 13px 20px; font-size: 16px; }
+  .hdr .wrap { gap: 22px; min-height: 68px; }
+  .logo { font-size: 32px; }
+  .logo span { font-size: 14px; padding: 5px 7px 4px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 0; min-height: 720px; }
+  .hero-photo { position: absolute; right: 0; top: 0; bottom: 0; width: 48%; height: auto; }
+  .hero-photo img { object-position: 50% 22%; }
+  .hero-photo::after { background: linear-gradient(90deg, var(--deep) 0%, rgba(6, 19, 44, 0.55) 26%, rgba(6, 19, 44, 0) 60%), linear-gradient(180deg, rgba(6, 19, 44, 0) 70%, rgba(6, 19, 44, 0.7) 100%); }
+  .hero-body { margin-top: 0; padding: 64px 0 60px; }
+  .card { max-width: 560px; }
+  .math-grid { grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: start; }
+  .meet-grid { grid-template-columns: 1fr 1fr; gap: 56px; }
+  .tiles { grid-template-columns: 1fr 1fr; }
+  .plan { grid-template-columns: repeat(3, 1fr); }
+  .test-grid { grid-template-columns: 1.55fr 1fr; gap: 44px; }
+  .steps { grid-template-columns: repeat(4, 1fr); }
+  .vol-grid { grid-template-columns: 0.9fr 1.1fr; gap: 56px; }
+  .foot { grid-template-columns: 1fr 1.4fr; }
 }
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .fill { animation: none; }
+  .btn:hover { transform: none; }
+}
 </style>
 </head>
 <body>
 
-<nav>
-  <a class="brand" href="#top">Mangeris <b>2028</b></a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#platform">Platform</a></li>
-    <li><a href="#accountability">Accountability</a></li>
-    <li><a href="#road">Road to 2028</a></li>
-    <li class="keep"><a class="pill-btn" href="https://www.paypal.com/paypalme/mangeris4thepeople" target="_blank" rel="noopener">Donate</a></li>
-  </ul>
-</nav>
+<div class="announce"><a href="#join"><b>2028 starts now.</b> 51% voted against the Democrat. Stand in one column &rarr;</a></div>
 
-<header class="hero" id="top">
-  <div class="hero-bg" role="img" aria-label="Maroon Bells, Colorado, at sunrise"></div>
-  <div class="hero-shade"></div>
-  <div class="ghost" aria-hidden="true">28</div>
+<header class="hdr">
   <div class="wrap">
-    <div class="eyebrow">Libertarian &middot; U.S. House &middot; Colorado District 4</div>
-    <h1 class="name">Douglas<span>Mangeris</span></h1>
-    <div class="comeback"><span class="tag">2028</span><i>I'm coming back.</i></div>
-    <div class="tagline"><strong>Real Freedom.</strong> Real Opportunity.<br><strong>Real Accountability.</strong></div>
-    <div class="cta">
-      <a class="btn btn-gold" href="#involve">Join the Fight</a>
-      <a class="btn btn-line" href="https://www.paypal.com/paypalme/mangeris4thepeople" target="_blank" rel="noopener">Donate Now</a>
-    </div>
+    <a class="logo" href="#top">Mangeris <span>4 The People</span></a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#meet">Meet Doug</a>
+      <a href="#math">The Math</a>
+      <a href="#plan">The Plan</a>
+      <a href="#record">The Record</a>
+      <a href="#test">Take the Test</a>
+      <a href="#volunteer">Volunteer</a>
+    </nav>
+    <a class="btn red" href="#donate">Donate</a>
+    <button class="menu" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
   </div>
 </header>
 
-<section class="counter" aria-label="Campaign clock">
-  <div class="counter-grid">
-    <div class="cell"><div class="k">Day of the fight</div><div class="v" id="day">1</div><div class="s">Every day since Nov 4, 2026</div></div>
-    <div class="cell"><div class="k">Days to Election Day</div><div class="v" id="left">735</div><div class="s">Tuesday, Nov 7, 2028</div></div>
-    <div class="cell"><div class="k">The road so far</div><div class="v" id="pct">0%</div><div class="bar"><i id="barfill"></i></div></div>
-    <div class="cell"><div class="k">Counties in CO-4</div><div class="v">21</div><div class="s">From the Denver suburbs to the Kansas line</div></div>
-  </div>
-</section>
+<main id="top">
 
-<section class="statement">
-  <div class="wrap reveal">
-    <p class="big">The 2026 race is done.<br><span>The 2028 race started the morning after.</span></p>
-    <p class="sig">I'm not going anywhere. Douglas Mangeris</p>
-  </div>
-</section>
-
-<div class="rule"></div>
-
-<section class="sec" id="about">
-  <div class="wrap about">
-    <div class="photo reveal">
-      <img src="/img/doug.webp" alt="Douglas Mangeris" width="900" height="1350" loading="lazy">
-      <div class="stamp">Builder. Father. Neighbor.</div>
-    </div>
-    <div class="reveal">
-      <div class="label">About the Candidate</div>
-      <h2 class="h2">Who <span>I Am</span></h2>
-      <p style="margin-top:2rem">I'm a <strong>commercial construction superintendent from Loveland</strong>, a Federal Firearms Licensee, and a proud father. I build things that last, and I intend to bring that same ethic to Washington.</p>
-      <p>Before I ran jobsites, I drilled in the oil fields. On a jobsite, if you miss the schedule, you own it. No excuses, no spin. Washington should run the same way.</p>
-      <p>No dynasty. No lobbyist money. No interest in the old political game. <strong>Your opinion matters. Mine does not.</strong></p>
-      <div class="stats">
-        <div class="stat"><b>$230M+</b><small>Career construction volume</small></div>
-        <div class="stat"><b>$64M</b><small>Largest project led</small></div>
-        <div class="stat"><b>4 yrs</b><small>Drilling the oil patch</small></div>
-        <div class="stat"><b>VP</b><small>Habitat for Humanity of Loveland</small></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="rule"></div>
-
-<section class="sec levels-bg">
+<section class="hero">
+  <div class="hero-photo"><img src="/img/doug-portrait.jpg" alt="Doug Mangeris"></div>
   <div class="wrap">
-    <div class="reveal">
-      <div class="label">A Representative for All of Colorado</div>
-      <h2 class="h2">Four Levels. <span>One Voice.</span></h2>
-      <p style="color:var(--muted);max-width:680px;line-height:1.85;margin-top:1.4rem">I don't fit in one neat little box, and that's exactly why I can fight for <em>all</em> of you.</p>
-    </div>
-    <div class="levels reveal">
-      <div class="lv" style="--c:var(--gold)"><div class="k">Federal Level</div><div class="t">Libertarian</div><p>Small, non-invasive government that stays out of your life and your wallet.</p></div>
-      <div class="lv" style="--c:#C0392B"><div class="k">State Level</div><div class="t">Republican</div><p>Fiscal responsibility and efficient tax laws that let Colorado thrive.</p></div>
-      <div class="lv" style="--c:#2f8fd6"><div class="k">City Level</div><div class="t">Democrat</div><p>Strong local services and real community investment where neighbors know your name.</p></div>
-      <div class="lv" style="--c:#27ae60"><div class="k">Home Level</div><div class="t">Socialist</div><p>What's mine is yours, because that's how trust actually works.</p></div>
-    </div>
-  </div>
-</section>
-
-<div class="rule"></div>
-
-<section class="sec" id="accountability" style="background:linear-gradient(135deg,#0a0a0a,#111)">
-  <div class="wrap">
-    <div class="reveal">
-      <div class="label">The Game Changer</div>
-      <h2 class="h2">Real Accountability.<br><span>In Real Time.</span></h2>
-    </div>
-    <div class="acct">
-      <div class="reveal">
-        <p>The technology already exists. With <strong>CheckYourRepresentative</strong>, every verified constituent in District 4 gets every House and Senate bill pushed straight to their phone.</p>
-        <p>You read it. You vote. Your recorded position goes straight to your representative. Then you check, in real time, whether your representative voted the way you told them to.</p>
-        <p>No backroom deals. No "trust us." <strong>Just total transparency between you and your representative, on every single vote.</strong></p>
-        <a class="btn btn-gold" style="margin-top:.8rem" href="https://checkyourrepresentative.com" target="_blank" rel="noopener">Open CheckYourRepresentative</a>
-      </div>
-      <div class="reveal">
-        <div class="steps">
-          <div class="step"><b>01</b><p>A bill drops in Congress. It hits your CheckYourRepresentative app instantly.</p></div>
-          <div class="step"><b>02</b><p>You read it. You vote yes or no. Your verified voice is recorded.</p></div>
-          <div class="step"><b>03</b><p>Your vote goes directly to your representative. I vote as your representative, not on my own agenda.</p></div>
-          <div class="step"><b>04</b><p>Check in real time whether I voted the way you told me to. Every single time.</p></div>
+    <div class="hero-body">
+      <p class="eyebrow">Doug Mangeris / Libertarian for Congress / Colorado's 4th</p>
+      <h1><span>Band together.</span><span class="goldtxt">Take back the 4th.</span></h1>
+      <p class="pitch">In 2026, <b>51% of us voted against the Democrat. The Democrat won anyway.</b> I am a Libertarian asking Republicans, independents and Libertarians to stand in one column in 2028.</p>
+      <form class="card" data-form="join" novalidate>
+        <h3>Join the coalition</h3>
+        <p class="sub">Be counted before the other side starts counting.</p>
+        <div class="fields">
+          <label class="f" for="j-first">First name<input id="j-first" name="first" autocomplete="given-name" required></label>
+          <label class="f" for="j-zip">ZIP code<input id="j-zip" name="zip" inputmode="numeric" autocomplete="postal-code" required></label>
+          <label class="f full" for="j-email">Email<input id="j-email" name="email" type="email" autocomplete="email" required></label>
+          <label class="f full" for="j-phone">Mobile (optional)<input id="j-phone" name="phone" type="tel" autocomplete="tel"></label>
         </div>
-        <p class="fine">We're not replacing the Constitution. We're finally making it work the way it was meant to.</p>
+        <button class="btn red block" type="submit" style="margin-top:14px">I'm in</button>
+        <p class="status" role="status" hidden></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="math">
+  <div class="wrap">
+    <p class="eyebrow">The math</p>
+    <h2>The votes were there. They were in two columns.</h2>
+    <div class="math-grid">
+      <div>
+        <div class="bars" aria-label="2026 result in Colorado's 4th District, unofficial count">
+          <div class="bar"><span class="who">Laubacher (D)</span><span class="n">48.77%</span><div class="track"><div class="fill d" style="width:93.79%"></div></div></div>
+          <div class="bar"><span class="who">Boebert (R)</span><span class="n">47.92%</span><div class="track"><div class="fill r" style="width:92.15%"></div></div></div>
+          <div class="bar"><span class="who">Mangeris (L)</span><span class="n">3.31%</span><div class="track"><div class="fill l" style="width:6.37%"></div></div></div>
+          <div class="bar sum"><span class="who">Everyone who voted against the Democrat</span><span class="n">51.23%</span><div class="track"><div class="fill r" style="width:92.15%"></div><div class="fill l" style="width:6.37%"></div></div></div>
+        </div>
+        <p class="note" style="margin-top:14px">Colorado's 4th, November 2026. Unofficial returns as of Nov 9.<sup><a href="#r1">[1]</a></sup></p>
+        <p class="lede">The reddest seat in Colorado went blue by less than one point. Nobody has to change who they are to fix that. We have to stand in the same place.</p>
+      </div>
+      <div class="straight">
+        <h3>"You split the vote."</h3>
+        <p>I have heard it. Here is the full math. In 2024 this district went Republican by about 11 points.<sup><a href="#r2">[2]</a></sup> In 2026 the Republican finished behind by less than one, with me at 3.3%.<sup><a href="#r1">[1]</a></sup></p>
+        <p style="margin-top:12px">My 3.3 matters. So do the 11 points that walked before I was ever on the ballot. Beating the blue in 2028 takes both groups in one column: the voters who stayed and the voters who left. I am asking to be the name on it, and I will debate anyone for the job.</p>
       </div>
     </div>
   </div>
 </section>
 
-<div class="rule"></div>
-
-<section class="sec plat-bg" id="platform">
+<section class="sec navy" id="meet">
   <div class="wrap">
-    <div class="reveal">
-      <div class="label">Platform</div>
-      <h2 class="h2">What I'm <span>Fighting For</span></h2>
+    <p class="eyebrow">Meet Doug</p>
+    <h2>Builder. Father. <span class="goldtxt">Libertarian.</span></h2>
+    <div class="meet-grid">
+      <div class="bio">
+        <p class="lede" style="margin-top:0">I'm Doug Mangeris. I run commercial job sites out of Loveland: multifamily, healthcare, senior living, retail and industrial. Before that I worked the rigs, drilling oil and gas.</p>
+        <p>I have never held office and I have never taken a dollar of lobbyist money. I am a father first. I am running because the people we sent to shrink Washington grew it, and it is time to send someone who builds for a living.</p>
+        <p>I am a Libertarian, and I will not pretend to be anything else to get your vote.</p>
+        <ul class="facts">
+          <li>ICC National Standard General Building Contractor, Class A</li>
+          <li>Federal Firearms Licensee</li>
+          <li>Certified master driller</li>
+          <li>Board member, Habitat for Humanity of Loveland (title for identification only)</li>
+          <li>History degree, UNLV</li>
+        </ul>
+      </div>
+      <div class="tiles">
+        <div class="tile"><div class="big">$230M+</div><p>of commercial construction built</p></div>
+        <div class="tile"><div class="big">4 yrs</div><p>drilling oil and gas, 2011 to 2015</p></div>
+        <div class="tile"><div class="big">$0</div><p>in lobbyist money. No political dynasty.</p></div>
+        <div class="tile"><div class="big">0</div><p>terms as a politician</p></div>
+      </div>
     </div>
-    <div class="plat reveal">
-      <div class="card"><div class="n">01</div><h3>Term Limits</h3><p>Career politicians have held their seats for decades while the national debt climbed into the tens of trillions. It's time for term limits and fresh leadership accountable to the people.</p></div>
-      <div class="card"><div class="n">02</div><h3>Fiscal Accountability</h3><p>No more generational debt. No foreign aid goes to anyone until the United States has a $0 national debt. American taxpayers come first, every time, without exception.</p></div>
-      <div class="card"><div class="n">03</div><h3>Election Integrity</h3><p>Every citizen should see exactly how their representative voted on every bill. When they vote against the people, we know immediately. Accountability is no longer optional.</p></div>
-      <div class="card"><div class="n">04</div><h3>Readable Legislation</h3><p>No bill longer than 50 pages. If a member of Congress can't explain what they're voting on, they don't vote.</p></div>
-      <div class="card"><div class="n">05</div><h3>Cost of Living</h3><p>Rent, insurance, groceries, gas and utilities, all hitting at once. Housing is a supply problem wrapped in red tape. I've pulled the permits. Cut the waste and families can afford to stay in Colorado.</p></div>
-      <div class="card"><div class="n">06</div><h3>Constitutional Values</h3><p>We the People wrote the Constitution. Protecting the liberties and rights in our founding document for every Coloradan, from the Front Range to the Eastern Plains.</p></div>
+    <div class="quote">
+      <div class="q">I'll debate anyone, anywhere, anytime.</div>
+      <p>I said that in October 2026 when I asked for a third podium on the debate stage. The offer stands for 2028. Any Republican, any Democrat, any room in the district. If my ideas cannot hold up next to theirs, you should get to see that for yourself.</p>
     </div>
   </div>
 </section>
 
-<div class="rule"></div>
-
-<section class="sec" id="road">
+<section class="donate" id="donate">
   <div class="wrap">
-    <div class="reveal">
-      <div class="label">The Plan</div>
-      <h2 class="h2">The Road to <span>2028</span></h2>
-      <p style="color:var(--muted);max-width:700px;line-height:1.85;margin-top:1.4rem">Not running to win a seat tomorrow. Running to plant seeds that grow for decades. Here's how the next two years go.</p>
+    <p class="eyebrow">Donate</p>
+    <h2>Chip in. The lobbyists won't.</h2>
+    <p class="lede">This campaign runs on neighbors. Every dollar goes to reaching one more voter who wants this seat back.</p>
+    <div class="amts">
+      <a class="btn navybtn" href="https://www.paypal.com/paypalme/mangeris4thepeople/5">$5</a>
+      <a class="btn navybtn" href="https://www.paypal.com/paypalme/mangeris4thepeople/25">$25</a>
+      <a class="btn navybtn" href="https://www.paypal.com/paypalme/mangeris4thepeople/50">$50</a>
+      <a class="btn navybtn" href="https://www.paypal.com/paypalme/mangeris4thepeople/100">$100</a>
+      <a class="btn navybtn" href="https://www.paypal.com/paypalme/mangeris4thepeople/250">$250</a>
+      <a class="btn other" href="https://www.paypal.com/paypalme/mangeris4thepeople">Other</a>
     </div>
-    <div class="road reveal">
-      <div class="mile now"><div class="when">NOV 2026</div><h3>Relaunch</h3><p>The morning after Election Day, the 2028 campaign began. One post, every single day, for two years.</p></div>
-      <div class="mile"><div class="when">2027</div><h3>Every County</h3><p>All 21 counties of CO-4. Town halls, jobsites, farms and main streets. Listening first.</p></div>
-      <div class="mile"><div class="when">EARLY 2028</div><h3>Ballot and Debates</h3><p>Lock in the ballot line and push for every candidate on the same debate stage. Voters deserve all their choices, not just two.</p></div>
-      <div class="mile"><div class="when">NOV 7, 2028</div><h3>Election Day</h3><p>Send a builder to Washington who answers to you, the record and the facts.</p></div>
-    </div>
+    <p class="small">Donations are processed by PayPal. Contributions to Mangeris4ThePeople are not tax deductible.</p>
   </div>
 </section>
 
-<section class="banner">
-  <div class="banner-bg"></div>
-  <div class="banner-sh"></div>
-  <div class="in reveal">
-    <h2>Join the Movement<em>for Liberty</em></h2>
-    <p>Two years. Every day. Together we send a real voice to Washington, one that puts Colorado families, freedom and accountability first.</p>
-    <a class="btn btn-gold" href="#involve">Get Involved Today</a>
-  </div>
-</section>
-
-<section class="sec" id="involve">
+<section class="sec paper" id="plan">
   <div class="wrap">
-    <div class="reveal">
-      <div class="label">Take Action</div>
-      <h2 class="h2">Get <span>Involved</span></h2>
-    </div>
-    <div class="inv reveal">
-      <div class="ic"><h3><span>01</span>Volunteer</h3><p>Knock doors, make calls and carry the message of liberty across all 21 counties of District 4. Every hour counts.</p><a href="mailto:Mangeris4thepeople2026@gmail.com?subject=I%20want%20to%20volunteer%20for%20Mangeris%202028">Sign Up</a></div>
-      <div class="ic"><h3><span>02</span>Donate</h3><p>Fuel the campaign with a contribution of any size. Two years is a long fight, and every dollar keeps it going.</p><a href="https://www.paypal.com/paypalme/mangeris4thepeople" target="_blank" rel="noopener">Contribute</a></div>
-      <div class="ic"><h3><span>03</span>Follow the Fight</h3><p>One post, every day, for two years. Follow, share and argue with me. Every share reaches a new voter.</p><a href="https://x.com/MericanDreamz" target="_blank" rel="noopener">Follow on X</a></div>
-      <div class="ic"><h3><span>04</span>Check Your Rep</h3><p>See every bill, cast your vote and hold your representative accountable in real time.</p><a href="https://checkyourrepresentative.com" target="_blank" rel="noopener">Launch App</a></div>
+    <p class="eyebrow">The plan</p>
+    <h2>Six lines. Hold me to every one.</h2>
+    <div class="plan">
+      <article class="plank"><div class="no">01</div><h3>Term limits</h3><p>Fresh leadership, on a schedule. Some members have held their seats since the 1990s. A seat in Congress is a tour of duty for the district. It was never meant to be a career.</p></article>
+      <article class="plank"><div class="no">02</div><h3>$0 debt before foreign aid</h3><p>No foreign aid to anyone until the national debt reads zero. The American taxpayer gets paid back first.</p></article>
+      <article class="plank"><div class="no">03</div><h3>50 page bills</h3><p>If a bill is too long for you to read, it is too long to pass. Fifty pages, maximum. Short enough that nobody can hide anything in it.</p></article>
+      <article class="plank"><div class="no">04</div><h3>Your vote on every bill</h3><p><a href="https://checkyourrepresentative.com">CheckYourRepresentative</a> is free. It puts every House and Senate bill in front of you, takes your yes or no, and sends it to your representative. I built it so you can check my votes against yours.</p></article>
+      <article class="plank"><div class="no">05</div><h3>The Constitution, all of it</h3><p>I hold a Federal Firearms License. I will protect every liberty in the founding document for every Coloradan, the Second Amendment included.</p></article>
+      <article class="plank"><div class="no">06</div><h3>Nobody owns this seat</h3><p>No lobbyist money. No political dynasty. A neighbor and a builder who answers to the district.</p></article>
     </div>
   </div>
 </section>
+
+<section class="sec" id="record">
+  <div class="wrap">
+    <p class="eyebrow">The record</p>
+    <h2>Why the reddest seat in Colorado went blue.</h2>
+    <p class="lede">If you voted Republican, this is no shot at you. You were promised one thing and Washington delivered another. This district went from an 11 point Republican win to a loss in two years.<sup><a href="#r2">[2]</a></sup> Here is why.</p>
+    <div class="rows">
+      <article class="rec">
+        <div><span class="tagp">Promised</span><div class="promised">Fiscal responsibility</div></div>
+        <div class="delivered"><span class="tagp del">Delivered</span>The national debt passed <b>$40 trillion</b> in August 2026. The trillion before that took five months.<sup><a href="#r3">[3]</a></sup></div>
+      </article>
+      <article class="rec">
+        <div><span class="tagp">Promised</span><div class="promised">Cut the spending</div></div>
+        <div class="delivered"><span class="tagp del">Delivered</span>On July 4, 2025 the debt limit went up by <b>$5 trillion</b>, the largest raise on record. One party held the House, the Senate and the White House when it passed.<sup><a href="#r5">[5]</a></sup></div>
+      </article>
+      <article class="rec">
+        <div><span class="tagp">Promised</span><div class="promised">An economy that works for families</div></div>
+        <div class="delivered"><span class="tagp del">Delivered</span>Washington ran a deficit of about <b>$2 trillion</b> in fiscal 2026 and paid a record <b>$1.36 trillion</b> in interest alone. Mortgage rates reached 7.40% that October. I build for a living. Ask me what 7.4% does to a young family trying to buy a first house.<sup><a href="#r4">[4]</a></sup></div>
+      </article>
+      <article class="rec">
+        <div><span class="tagp">Promised</span><div class="promised">Term limits</div></div>
+        <div class="delivered"><span class="tagp del">Delivered</span><b>Nine in ten Republicans</b> want term limits on Congress. So do most Democrats. Congress has never sent the amendment to the states, because the people who would have to vote for it are the people it would send home.<sup><a href="#r7">[7]</a></sup></div>
+      </article>
+    </div>
+    <p class="blue"><b>The blue team's answer is worse.</b> The left, from the Democratic Socialists of America on down, wants Washington running more of your paycheck, your business and your home. The debt already doubled in ten years.<sup><a href="#r6">[6]</a></sup> Talking smaller while building bigger is how we lost this seat. Beating the blue takes someone who will build smaller for real.</p>
+  </div>
+</section>
+
+<section class="deep debt" aria-label="National debt estimate">
+  <div class="wrap">
+    <div class="debt-grid">
+      <div>
+        <p class="lab">National debt, estimated right now</p>
+        <div class="big" id="debt">$40,547,000,000,000</div>
+      </div>
+      <div>
+        <p class="lab">Added since you opened this page</p>
+        <div class="since" id="since">$0</div>
+      </div>
+    </div>
+    <p class="note">Estimate. Starts from the $40.547 trillion total reported for Nov 3, 2026 and adds the fiscal 2026 deficit pace of about $2 trillion a year, roughly $63,400 a second.<sup><a href="#r4">[4]</a><a href="#r5">[5]</a></sup></p>
+  </div>
+</section>
+
+<section class="sec navy" id="test">
+  <div class="wrap">
+    <p class="eyebrow">Take the test</p>
+    <h2>The 60 second <span class="goldtxt">crossover test.</span></h2>
+    <p class="lede">Republican, unaffiliated or Libertarian. Six statements. Answer them like nobody from a party office is watching.</p>
+    <div class="test-grid">
+      <div id="questions">
+        <div class="q"><p><span class="no">1</span>Congress should have term limits.</p><div class="pick"><button type="button" class="yes" aria-pressed="false" id="q1y">Agree</button><button type="button" class="no-btn" aria-pressed="false" id="q1n">Not sold</button></div></div>
+        <div class="q"><p><span class="no">2</span>Washington should pay down its own debt before it sends another dollar overseas.</p><div class="pick"><button type="button" class="yes" aria-pressed="false" id="q2y">Agree</button><button type="button" class="no-btn" aria-pressed="false" id="q2n">Not sold</button></div></div>
+        <div class="q"><p><span class="no">3</span>A bill should be short enough to read before anyone votes on it.</p><div class="pick"><button type="button" class="yes" aria-pressed="false" id="q3y">Agree</button><button type="button" class="no-btn" aria-pressed="false" id="q3n">Not sold</button></div></div>
+        <div class="q"><p><span class="no">4</span>My representative should have to see how I would vote, on every bill.</p><div class="pick"><button type="button" class="yes" aria-pressed="false" id="q4y">Agree</button><button type="button" class="no-btn" aria-pressed="false" id="q4n">Not sold</button></div></div>
+        <div class="q"><p><span class="no">5</span>The Second Amendment means what it says.</p><div class="pick"><button type="button" class="yes" aria-pressed="false" id="q5y">Agree</button><button type="button" class="no-btn" aria-pressed="false" id="q5n">Not sold</button></div></div>
+        <div class="q"><p><span class="no">6</span>Nobody should hold a seat in Congress on lobbyist money.</p><div class="pick"><button type="button" class="yes" aria-pressed="false" id="q6y">Agree</button><button type="button" class="no-btn" aria-pressed="false" id="q6n">Not sold</button></div></div>
+      </div>
+      <aside class="score" aria-live="polite">
+        <p class="lab">You and Doug agree on</p>
+        <div class="num"><span id="scoreNum">0</span><small> / 6</small></div>
+        <p id="scoreText">Tap through all six. Be honest.</p>
+        <a class="btn gold block" id="shareBtn" href="https://twitter.com/intent/tweet?text=I%20want%20Colorado%27s%204th%20back.%20I%20took%20the%20crossover%20test.%20Take%20it%20yourself%3A%20mangeris4thepeople.com%20%40MericanDreamz">Post your score on X</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="sec paper" id="why">
+  <div class="wrap">
+    <p class="eyebrow">Why Libertarian</p>
+    <h2>The farther from your front door, the less power it gets.</h2>
+    <p class="lede">That is the whole philosophy. The seat I am running for is the far one, and that is why the ballot says Libertarian.</p>
+    <div class="steps">
+      <div class="step fed"><span class="dist">Farthest from you</span><h3>Federal <em>/ Libertarian</em></h3><p>Small, non-invasive government that stays out of your wallet, your business and your home. This is the one on your 2028 ballot.</p></div>
+      <div class="step"><span class="dist">A drive away</span><h3>State <em>/ Republican</em></h3><p>Fiscal responsibility and efficient tax laws. If you are a Colorado Republican, we already agree here.</p></div>
+      <div class="step"><span class="dist">Down the street</span><h3>City <em>/ Local</em></h3><p>Roads, water, plows and parks, voted on by the neighbors who pay for them and can walk into the meeting.</p></div>
+      <div class="step"><span class="dist">Your kitchen table</span><h3>Home <em>/ Yours</em></h3><p>What's mine is yours works at exactly one scale, and that scale is a family. Nobody in Washington gets a seat at this table.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="volunteer">
+  <div class="wrap">
+    <div class="vol-grid">
+      <div>
+        <p class="eyebrow">Volunteer</p>
+        <h2>Two years. One district. Every door.</h2>
+        <p class="lede">Colorado's 4th runs from Loveland and Douglas County across the Eastern Plains. Nobody covers that with TV ads. We cover it with people. Tell me what you will do and I will put you to work.</p>
+      </div>
+      <form class="volcard" data-form="volunteer" novalidate>
+        <div class="fields" style="margin-top:0">
+          <label class="f" for="v-name">Name<input id="v-name" name="name" autocomplete="name" required></label>
+          <label class="f" for="v-zip">ZIP code<input id="v-zip" name="zip" inputmode="numeric" autocomplete="postal-code" required></label>
+          <label class="f full" for="v-email">Email<input id="v-email" name="email" type="email" autocomplete="email" required></label>
+          <label class="f full" for="v-phone">Phone<input id="v-phone" name="phone" type="tel" autocomplete="tel"></label>
+        </div>
+        <div class="chips" role="group" aria-label="How you want to help">
+          <label><input type="checkbox" id="v-doors" name="help" value="doors"><span>Knock on doors</span></label>
+          <label><input type="checkbox" id="v-calls" name="help" value="calls"><span>Make calls</span></label>
+          <label><input type="checkbox" id="v-sign" name="help" value="sign"><span>Put up a yard sign</span></label>
+          <label><input type="checkbox" id="v-host" name="help" value="host"><span>Host a meet and greet</span></label>
+          <label><input type="checkbox" id="v-gop" name="help" value="crossover"><span>I'm a Republican crossing over</span></label>
+        </div>
+        <button class="btn navybtn block" type="submit" style="margin-top:18px">Count me in</button>
+        <p class="status" role="status" hidden></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="join" id="join">
+  <div class="wrap">
+    <p class="eyebrow">2028</p>
+    <h2>Split, we lost by a point. <span class="goldtxt">Together, we take it back.</span></h2>
+    <div class="actions">
+      <a class="btn red" href="#top">Join the coalition</a>
+      <a class="btn gold" href="https://twitter.com/intent/tweet?text=I%20want%20Colorado%27s%204th%20back%20in%202028%20and%20I%27m%20banding%20together%20behind%20%40MericanDreamz.%20mangeris4thepeople.com">Tell X you're in</a>
+      <a class="btn line" href="https://checkyourrepresentative.com">Check your representative</a>
+    </div>
+    <p class="slogan">Real freedom. Real opportunity. Real accountability.</p>
+  </div>
+</section>
+
+</main>
 
 <footer>
-  <div class="wrap">
-    <div class="f-name">Douglas Mangeris &middot; Libertarian &middot; 2028</div>
-    <div class="f-links">
-      <a href="https://x.com/MericanDreamz" target="_blank" rel="noopener">X @MericanDreamz</a>
-      <a href="https://checkyourrepresentative.com" target="_blank" rel="noopener">CheckYourRepresentative</a>
-      <a href="mailto:Mangeris4thepeople2026@gmail.com">Contact</a>
+  <div class="wrap foot">
+    <div style="display:grid; gap:18px; align-content:start">
+      <a class="logo" href="#top" style="color:#fff">Mangeris <span>4 The People</span></a>
+      <nav aria-label="Footer">
+        <a href="#meet">Meet Doug</a><a href="#math">The Math</a><a href="#plan">The Plan</a><a href="#record">The Record</a><a href="#test">The Test</a><a href="#volunteer">Volunteer</a><a href="#donate">Donate</a><a href="https://twitter.com/MericanDreamz">X / @MericanDreamz</a>
+      </nav>
+      <span class="paid">Paid for by Mangeris4ThePeople</span>
+      <span>Doug Mangeris, Libertarian for U.S. House, Colorado's 4th Congressional District. Contributions are not tax deductible.</span>
     </div>
-    <div class="disc">Paid for by Mangeris4forThePeople<br>U.S. House &middot; Colorado District 4 &middot; Election Day: November 7, 2028</div>
+    <div class="receipts" id="receipts">
+      <h3>Receipts. Every number on this page.</h3>
+      <ol>
+        <li id="r1">Colorado Politics, Nov 9, 2026. Unofficial returns: Laubacher 48.77%, Boebert 47.92%, Mangeris 3.31%. <a href="https://www.coloradopolitics.com/2026/11/09/lauren-boebert-eileen-laubacher-claims-victory-election-results/">coloradopolitics.com</a></li>
+        <li id="r2">Newsweek, Nov 2026. 2024 result in CO-4: 53.6% to 42.4%. <a href="https://newsweek.com/lauren-boebert-house-results-midterm-elections-12660959">newsweek.com</a></li>
+        <li id="r3">Associated Press, Aug 19, 2026. National debt passes $40 trillion, five months after $39 trillion. <a href="https://www.hawaiinewsnow.com/2026/08/19/us-national-debt-now-stands-40-trillion/">AP via Hawaii News Now</a></li>
+        <li id="r4">Reuters, Oct 19, 2026. Fiscal 2026 deficit of $2 trillion, record $1.36 trillion debt service, mortgage rates at 7.40%. <a href="https://coloradobiz.com/us-deficits-high-government-debt-40-trillion/">Reuters via ColoradoBiz</a></li>
+        <li id="r5">The World Data, Nov 6, 2026, reporting Treasury figures. Total public debt of $40.547 trillion on Nov 3, 2026; debt limit raised $5 trillion on July 4, 2025. <a href="https://theworlddata.com/us-debt-ceiling-statistics/">theworlddata.com</a></li>
+        <li id="r6">Al Jazeera, Aug 19, 2026. U.S. debt doubled over the last decade. <a href="https://www.aljazeera.com/economy/2026/8/19/us-national-debt-passes-record-40-trillion">aljazeera.com</a></li>
+        <li id="r7">Pew Research Center, Sept 19, 2023. Term limits for Congress favored by 90% of Republicans and 86% of Democrats, leaners included. <a href="https://www.pewresearch.org/politics/2023/09/19/how-americans-view-proposals-to-change-the-political-system/">pewresearch.org</a></li>
+      </ol>
+    </div>
   </div>
 </footer>
 
 <script>
-(function(){
-  var start=new Date('2026-11-04T00:00:00-07:00'), elec=new Date('2028-11-07T00:00:00-07:00'), now=new Date(), D=864e5;
-  var day=Math.max(1,Math.floor((now-start)/D)+1), left=Math.max(0,Math.ceil((elec-now)/D)), total=Math.round((elec-start)/D);
-  var pct=Math.min(100,Math.max(0,(now-start)/(elec-start)*100));
-  document.getElementById('day').textContent=day.toLocaleString();
-  document.getElementById('left').textContent=left.toLocaleString();
-  document.getElementById('pct').textContent=(pct<1?pct.toFixed(1):Math.round(pct))+'%';
-  setTimeout(function(){document.getElementById('barfill').style.width=Math.max(pct,0.6)+'%'},400);
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.05,rootMargin:'0px 0px -5% 0px'});
-  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+(function () {
+  /* Set this to the signup endpoint when the site is deployed. Empty means preview mode. */
+  var SIGNUP_ENDPOINT = '';
+  /* Until an endpoint exists, forms hand off to the visitor's email app. */
+  var SIGNUP_EMAIL = 'Mangeris4thepeople2026@gmail.com';
+
+  /* Mobile menu */
+  var nav = document.getElementById('nav');
+  var menuBtn = document.getElementById('menuBtn');
+  menuBtn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }
+  });
+
+  /* Forms */
+  function say(form, text) {
+    var s = form.querySelector('.status');
+    s.textContent = text;
+    s.hidden = false;
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('form[data-form]'), function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var missing = null;
+      Array.prototype.forEach.call(form.querySelectorAll('input[required]'), function (i) {
+        if (!missing && !i.value.trim()) { missing = i; }
+      });
+      if (missing) { say(form, 'Fill in ' + missing.parentNode.firstChild.textContent.trim().toLowerCase() + ' and try again.'); missing.focus(); return; }
+      var email = form.querySelector('input[type="email"]');
+      if (email && email.value.indexOf('@') < 1) { say(form, 'That email does not look right. Check it and try again.'); email.focus(); return; }
+      if (!SIGNUP_ENDPOINT) {
+        var lines = [];
+        new FormData(form).forEach(function (v, k) { if (v) { lines.push(k + ': ' + v); } });
+        var subject = form.getAttribute('data-form') === 'volunteer' ? 'Volunteer signup' : 'Count me in for 2028';
+        window.location.href = 'mailto:' + SIGNUP_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\n'));
+        say(form, 'Your email app is opening with your details filled in. Press send and you are in.');
+        return;
+      }
+      var data = {};
+      new FormData(form).forEach(function (v, k) { data[k] = data[k] ? data[k] + ',' + v : v; });
+      data.form = form.getAttribute('data-form');
+      fetch(SIGNUP_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+        .then(function (r) { if (!r.ok) { throw new Error('bad'); } say(form, 'You are in. Watch your inbox.'); form.reset(); })
+        .catch(function () { say(form, 'That did not go through. Check your connection and try again.'); });
+    });
+  });
+
+  /* Debt estimate: reported total on Nov 3, 2026 plus the fiscal 2026 deficit pace. */
+  var BASE = 40.547e12;
+  var BASE_TIME = Date.UTC(2026, 10, 3, 5, 0, 0);
+  var PER_SECOND = 2e12 / (365 * 24 * 3600);
+  var opened = Date.now();
+  var debtEl = document.getElementById('debt');
+  var sinceEl = document.getElementById('since');
+  function money(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+  function tick() {
+    var now = Date.now();
+    debtEl.textContent = money(BASE + ((now - BASE_TIME) / 1000) * PER_SECOND);
+    sinceEl.textContent = money(((now - opened) / 1000) * PER_SECOND);
+  }
+  var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  tick();
+  setInterval(tick, calm ? 1000 : 90);
+
+  /* Crossover test */
+  var answers = {};
+  var numEl = document.getElementById('scoreNum');
+  var textEl = document.getElementById('scoreText');
+  var shareEl = document.getElementById('shareBtn');
+  function render() {
+    var answered = 0, agree = 0, k;
+    for (k in answers) { answered++; if (answers[k] === 'y') { agree++; } }
+    numEl.textContent = agree;
+    var msg;
+    if (answered < 6) {
+      msg = answered === 0 ? 'Tap through all six. Be honest.' : (6 - answered) + ' to go. Keep going.';
+    } else if (agree >= 5) {
+      msg = 'That is the Libertarian platform, and you just agreed with ' + agree + ' of 6. We are on the same side. Stand in the same column.';
+    } else if (agree >= 3) {
+      msg = 'More than halfway. Bring me the ones you are not sold on. I will debate them in any room in the district.';
+    } else {
+      msg = 'Fair enough. I would rather have your honest no than a party line yes. The debate offer still stands.';
+    }
+    textEl.textContent = msg;
+    var t = "I want Colorado's 4th back in 2028. I agree with the Libertarian on " + agree + " of 6. Take the crossover test: mangeris4thepeople.com @MericanDreamz";
+    shareEl.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(t);
+  }
+  document.getElementById('questions').addEventListener('click', function (e) {
+    var b = e.target.closest ? e.target.closest('button') : null;
+    if (!b) { return; }
+    var q = b.id.slice(0, 2), v = b.id.slice(2);
+    answers[q] = v;
+    document.getElementById(q + 'y').setAttribute('aria-pressed', v === 'y' ? 'true' : 'false');
+    document.getElementById(q + 'n').setAttribute('aria-pressed', v === 'n' ? 'true' : 'false');
+    render();
+  });
 })();
 </script>
 </body>
