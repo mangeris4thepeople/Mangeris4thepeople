@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    { "source": "/2026.html", "destination": "https://mangeris4thepeople.com/2026-results", "permanent": true },
+    { "source": "/2026", "destination": "https://mangeris4thepeople.com/2026-results", "permanent": true },
+    { "source": "/volunteer.html", "destination": "https://mangeris4thepeople.com/#volunteer", "permanent": true },
+    { "source": "/volunteer", "destination": "https://mangeris4thepeople.com/#volunteer", "permanent": true },
+    { "source": "/(.*)", "destination": "https://mangeris4thepeople.com/", "permanent": true }
+  ]
+}
