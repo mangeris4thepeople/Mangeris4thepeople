@@ -41,6 +41,9 @@ table { border-collapse: collapse; width: 100%; max-width: 560px; font-variant-n
 th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
 th { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
 td:last-child, th:last-child { text-align: right; font-weight: 800; }
+.facts th { width: 36%; vertical-align: top; padding-top: 14px; }
+.facts td:last-child { text-align: left; }
+.body p a, .faq dd a { font-weight: 700; text-decoration-color: var(--gold); text-decoration-thickness: 3px; text-underline-offset: 3px; }
 .note { font-size: 13px; color: var(--muted); margin-top: 8px; }
 .cta { background: var(--deep); color: #fff; padding: 52px 0; }
 .cta .wrap { max-width: 1180px; }
