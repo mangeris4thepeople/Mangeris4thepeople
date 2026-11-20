@@ -43,6 +43,10 @@ th { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: 
 td:last-child, th:last-child { text-align: right; font-weight: 800; }
 .facts th { width: 36%; vertical-align: top; padding-top: 14px; }
 .facts td:last-child { text-align: left; }
+.cands { max-width: 100%; }
+.cands td:last-child, .cands th:last-child { text-align: left; font-weight: 400; }
+.cands td:first-child { font-weight: 800; }
+.note a { text-decoration-color: var(--gold); }
 .body p a, .faq dd a { font-weight: 700; text-decoration-color: var(--gold); text-decoration-thickness: 3px; text-underline-offset: 3px; }
 .note { font-size: 13px; color: var(--muted); margin-top: 8px; }
 .cta { background: var(--deep); color: #fff; padding: 52px 0; }
